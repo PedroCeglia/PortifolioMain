@@ -1,13 +1,12 @@
+import StyleGlobal from '@/styles/global'
 import EstruturaPagina from '@/components/EstruturaPagina'
 
-export const metadata = {
-  title: 'PedroCeglia | Portifólio',
-  description: 'Web Developer Portifolio',
-}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <StyleGlobal/>
+
       <EstruturaPagina>
         {children}
       </EstruturaPagina>
