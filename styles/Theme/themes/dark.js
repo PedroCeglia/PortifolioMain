@@ -2,7 +2,7 @@
 const darkBackgroundColor = {
     bc0:"#000000", // Black
     bc1:"#333333", // Dark
-    bc2:"#000c17", // rgb(0, 12, 23) 
+    bc2:"#1a6dab", // rgb(0, 12, 23) 
     bc3:"#1a6dab", // 
     bc4:"#1d96c2", // 
     bc5:"#6ed0e4", //  
@@ -29,7 +29,7 @@ const rgbaFunctions = {
         return `rgba(245,245,245,${opacityField})`
     },
     getColor1RGBA:(opacityField)=>{
-        return `rgba(1, 27, 49,${opacityField})`
+        return `rgba(15, 54, 84,${opacityField})`
     },
     getColor2RGBA:(opacityField)=>{
         return `rgba(0, 44, 79,${opacityField})`
