@@ -1,10 +1,14 @@
+import { EstruturaPaginaStyledComponent, ContentEstruturaPaginaStyled } from "./style"
 import Header from "./Header"
+import Footer from "./Footer"
 export default function EstruturaPagina({children}){
     return(
-        <body>
+        <EstruturaPaginaStyledComponent>
             <Header/>
-            {children}
-            footer
-        </body>
+            <ContentEstruturaPaginaStyled>
+                {children}
+            </ContentEstruturaPaginaStyled>
+            <Footer/>
+        </EstruturaPaginaStyledComponent>
     )
 }
