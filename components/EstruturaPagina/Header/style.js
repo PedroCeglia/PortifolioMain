@@ -9,7 +9,7 @@ export const HeaderStyledComponent = styled.header`
 
     z-index: 10;
 
-    background-color: ${style.theme.backgroundColor.bc2};
+    background-color: ${style.theme.backgroundColor.bc1};
     color: ${style.theme.color.c1};
 
     display: flex;
