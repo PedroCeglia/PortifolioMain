@@ -10,7 +10,6 @@ import { navLinks } from "@/constants/navlinks"
 export default function MenuHeader(){
     const [menuIsOpen, setMenuIsOpen] = useState(false)
     function handleMenuToggle(){
-        console.log(menuIsOpen)
         setMenuIsOpen(!menuIsOpen)
     }
     return(
@@ -32,8 +31,8 @@ export default function MenuHeader(){
             <MenuBox menuIsOpen={menuIsOpen}>
                 {
                     navLinks.map((item,key)=>(
-                        <li>
-                            <MenuBoxItem key={key} href={item.link}>{item.title}</MenuBoxItem>
+                        <li key={key}>
+                            <MenuBoxItem href={item.link}> {item.title} </MenuBoxItem>
                         </li>
                     ))
                 }
