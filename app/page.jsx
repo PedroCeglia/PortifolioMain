@@ -1,7 +1,17 @@
+import {
+    IntroSection, 
+    WhoImSection, 
+    ProjetosSection, 
+    StacksSection
+} from "@/components/pages/Home"
+
 export default function Home() {
   return (
-    <main>
-      Home
-    </main>
+    <>
+      <IntroSection />
+      <WhoImSection />
+      <ProjetosSection />
+      <StacksSection />
+    </>
   )
 }
