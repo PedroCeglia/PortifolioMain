@@ -64,9 +64,6 @@ export const MenuToggleLabelSpan = styled.span`
             transform: rotate(90deg);
         }
     `}
-    @media (min-width: 768px) {
-        display: none;
-    }
 
 `
 
