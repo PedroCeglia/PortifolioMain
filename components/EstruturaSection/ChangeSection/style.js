@@ -7,7 +7,7 @@ export const ChangeSectionStyledComponent = styled.div`
     bottom: -25px;
     align-self: center;
     border-radius: 10px;
-    z-index: 10;
+    z-index: 9;
 
     .link-container{
         height: 50px;
