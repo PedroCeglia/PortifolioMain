@@ -7,8 +7,9 @@ export default function EstruturaPagina({children}){
             <Header/>
             <ContentEstruturaPaginaStyled>
                 {children}
+                <Footer/>
             </ContentEstruturaPaginaStyled>
-            <Footer/>
+            
         </EstruturaPaginaStyledComponent>
     )
 }
