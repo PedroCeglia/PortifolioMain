@@ -7,21 +7,23 @@ export const HeaderStyledComponent = styled.header`
     width: 100vw;
     height: 100px;
 
+    position: fixed;
+    top: 0;
+    left: 0;
+
     z-index: 10;
 
-    background-color: ${style.theme.backgroundColor.bc1};
+    background-color: ${style.theme.rgbaFunctions.getColor1RGBA(1)};
     color: ${style.theme.color.c1};
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-    padding: 10px 5vw;
+    border-bottom: 2px solid ${style.theme.rgbaFunctions.getColor2RGBA(5)};
 `
-export const LogoHeaderStyledComponent = styled.h1`
-    font-size: ${style.fonts.fontsSize.big};
-    font-family: ${style.fonts.fontsFamily.montserrat};
-    font-weight: 100;
 
-    color: ${style.theme.color.c1};
+export const HeaderPaddingStlye = styled.div`
+    padding: 50px;
+
 `
