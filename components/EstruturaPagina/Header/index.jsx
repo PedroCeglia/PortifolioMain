@@ -1,19 +1,29 @@
-import { HeaderStyledComponent, LogoHeaderStyledComponent } from "./style"
-import MenuHeader from "./MenuHeader"
+'use client'
+import { useState } from "react"
+import { HeaderStyledComponent, HeaderPaddingStlye } from "./style"
+import HeaderContent from "./HeaderContent"
+import HeaderMenuBox from "./HeaderMenuBox"
 
 export default function Header(){
+    const [menuIsOpen, setMenuIsOpen] = useState(false)
+    function handleMenuToggle(){
+        setMenuIsOpen(!menuIsOpen)
+    }
     return(
-        <HeaderStyledComponent>
-            <LogoHeader/>
-            <MenuHeader/>
-        </HeaderStyledComponent>
+        <>        
+            <HeaderStyledComponent>
+                <HeaderContent menuIsOpen={menuIsOpen} handleMenuToggle={handleMenuToggle}/>
+                <HeaderMenuBox menuIsOpen={menuIsOpen}/>
+            </HeaderStyledComponent>
+            <HeaderPaddingTop/>
+        </>
+
     )
 }
 
-function LogoHeader(){
+
+function HeaderPaddingTop(){
     return(
-        <LogoHeaderStyledComponent>
-            PedroCeglia | Portifolio
-        </LogoHeaderStyledComponent>
+        <HeaderPaddingStlye/>
     )
 }
