@@ -14,5 +14,6 @@ export const EstruturaPaginaStyledComponent = styled.body`
 
 export const ContentEstruturaPaginaStyled = styled.div`
     min-height: calc(100vh - 160px);
-    width: 100%;
+    overflow-y: scroll;
+
 `
