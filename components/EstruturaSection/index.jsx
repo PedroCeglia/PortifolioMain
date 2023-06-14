@@ -14,7 +14,6 @@ export default function EstruturaSection({children, idSection, idChangeSection})
         
             <SectionControl idSection={idSection}>
                 <EstruturaSectionStyledComponent isOdd={isOdd} isIntro={isIntro}>
-                    {idSection}
                     {children}
                     <ChangeSection slug={idChangeSection}/>
                 </EstruturaSectionStyledComponent> 
