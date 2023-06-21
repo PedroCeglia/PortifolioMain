@@ -2,7 +2,7 @@ import {
     IntroSection, 
     WhoImSection, 
     ProjetosSection, 
-    StacksSection
+    CertificadosSection
 } from "@/components/pages/Home"
 
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
       <IntroSection />
       <WhoImSection />
       <ProjetosSection />
-      <StacksSection />
+      <CertificadosSection />
     </>
   )
 }
