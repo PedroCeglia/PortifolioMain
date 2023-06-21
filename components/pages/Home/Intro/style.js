@@ -11,6 +11,5 @@ export const IntroSectionStyledComponent = styled.div`
     justify-content: space-between;
     align-items: center;
     
-    padding: 20px 10px;
 `
 
