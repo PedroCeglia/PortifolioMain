@@ -4,9 +4,11 @@ import style from "@/styles";
 import styled from "styled-components";
 
 export const CarroselStacksStyledComponent = styled.div`
-
+    align-self: center;
+    
     width: 90vw;
     min-width: 250px;
+    margin-bottom: 40px;
 
     h2{
         color: ${style.theme.rgbaFunctions.getLightColorRGBA(.9)};
