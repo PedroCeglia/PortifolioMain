@@ -1,6 +1,7 @@
 import { 
     IntroInfoContainerStyledComponent, 
-    IntroInfoContentStyledComponent 
+    IntroInfoContentStyledComponent,
+    IntroMainImage 
 } from "./style";
 
 import Image from "next/image";
@@ -25,11 +26,9 @@ export default function InfoContainer(){
                     /> 
                 </div>
             </IntroInfoContentStyledComponent>   
-            <img 
-                width={300} height={300}
+            <IntroMainImage 
                 src="/assets/images/developer-pedro.png"
                 alt="Intro"
-                style={{borderRadius:"20px"}}
             />                
         </IntroInfoContainerStyledComponent>
     )
