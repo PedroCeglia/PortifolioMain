@@ -4,14 +4,40 @@ import styled from "styled-components"
 import style from "@/styles"
 
 export const IntroInfoContainerStyledComponent = styled.div`
+    align-self: center;
+    
     width: 95%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: 5px;
+
+    @media all and (max-width:900px){
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    @media all and (max-width:500px){
+        font-size: ${style.fonts.fontsSize.littleSmall};
+    }
+
+    padding-bottom: 40px;
 `
+export const IntroMainImage = styled.img`
+    min-width: 150px;
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    margin-left: 60px;
+    margin-top: 10px;
+
+
+
+    @media all and (max-width:900px){
+        margin: 20px;
+    }
+`
+
 export const IntroInfoContentStyledComponent = styled.div`
     display: flex;
     flex-direction: column;
@@ -21,7 +47,6 @@ export const IntroInfoContentStyledComponent = styled.div`
     font-family: ${style.fonts.fontsFamily.poppins};
     color: ${style.theme.color.c1};
 
-    margin-right: 60px;
     
     h1{
         font-size: ${style.fonts.fontsSize.bigger};
