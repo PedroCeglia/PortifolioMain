@@ -38,7 +38,7 @@ function CarroselStacksContent(){
             }}
 
             autoplay={{
-                delay: 4000,
+                delay: 2000,
                 disableOnInteraction: false
             }}
             
@@ -51,9 +51,7 @@ function CarroselStacksContent(){
             navigation={true}
             loop={true}
 
-            onSlideChange={()=>{console.log('slide change')}}
-            onSwiper={(swiper)=>{console.log(swiper)}}
-            style={{width:"85%", minWidth:"250px"}}
+            style={{width:"80%", minWidth:"250px"}}
         >
             {
                 mainStacksList.map((stack, key)=>{
@@ -61,8 +59,8 @@ function CarroselStacksContent(){
                         <SwiperSlide 
                             key={key}
                             style={{
-                                maxWidth:"200px",
-                                minWidth:"150px", 
+                                maxWidth:"180px",
+                                minWidth:"100px", 
                             }}
                         >
                             <StacksItem
