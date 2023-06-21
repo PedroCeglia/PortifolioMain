@@ -48,7 +48,7 @@ export const MenuToggleLabelSpan = styled.span`
     width: 30px;
     height: 2px;
     background-color: #616161;
-    transition-duration: 0.25s;
+    transition-duration: .4s;
 
     &::before,
     &::after {
@@ -58,7 +58,7 @@ export const MenuToggleLabelSpan = styled.span`
         width: 100%;
         height: 2px;
         background-color: #616161;
-        transition-duration: 0.25s;
+        transition-duration: .4s;
     }
 
     &::before {
