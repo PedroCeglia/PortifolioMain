@@ -1,6 +1,6 @@
 import IntroSection from "./Intro";
 import WhoImSection from "./WhoIm";
 import ProjetosSection from "./Projetos";
-import StacksSection from "./Stacks";
+import CertificadosSection from "./Certificados";
 
-export {IntroSection, WhoImSection, ProjetosSection, StacksSection}
+export {IntroSection, WhoImSection, ProjetosSection, CertificadosSection}
