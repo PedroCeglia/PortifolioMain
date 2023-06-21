@@ -8,10 +8,10 @@ export function getAllProjectList( setProjectList, max6=false ) {
             projectList.push( project.val() )
         })
 
-        const filterProjectListByPosition = () => projectList.filter( ( a ,b ) => a.posicao - b.posicao )
-        const filterProjectListBySize = () => ( 
-            ( max6 ) ? filterProjectListByPosition().slice( 0, 5 ) : filterProjectListByPosition()
-        )
+        const filterProjectListByPosition = projectList.filter( ( a ,b ) => a.posicao - b.posicao )
+        const filterProjectListBySize = () => ( max6 &&  filterProjectListByPosition.length > 5) ? (
+            filterProjectListByPosition.slice( 0, 5 ) ) : filterProjectListByPosition
+        
 
         const projectListFinal =  filterProjectListBySize()
         setProjectList( projectListFinal )
@@ -34,10 +34,9 @@ export function getAllCertificadoList( setCertificadosList, max6=false ) {
             certificadosList.push( certificado.val() )
         })
 
-        const filterCertificadosListByPosition = () => certificadosList.filter( ( a, b ) => a.position - b.position )
-        const filterCertificadosListBySize = () => (
-            ( max6 ) ? filterCertificadosListByPosition().slice( 0, 5 ): filterCertificadosListByPosition()
-        )
+        const filterCertificadosListByPosition = certificadosList.filter( ( a, b ) => a.position - b.position )
+        const filterCertificadosListBySize = () => ( max6 && filterCertificadosListByPosition.length > 5) ? (
+                filterCertificadosListByPosition.slice( 0, 5 ) ) : filterCertificadosListByPosition
 
         const certificadosListFinal = filterCertificadosListBySize()
         setCertificadosList( certificadosListFinal )
