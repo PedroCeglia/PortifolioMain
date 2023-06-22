@@ -49,7 +49,14 @@ export const ItemProjetosStyledComponent = styled.div`
         display: flex;
         justify-content: center;
         align-items: center;
+        
+        transition: all .4s;
+        cursor: pointer;
     } 
+    div a:hover{
+        background-color: ${style.theme.rgbaFunctions.getColor2RGBA(.6)};
+    } 
+
     div a img{
         width: 18px;
         height: 18px;
