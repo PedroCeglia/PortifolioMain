@@ -47,6 +47,11 @@ export function getCertificadoById( setCertificado, id ){
         setCertificado( certificado )
     })
 }
+export function getProjectById( setProject, id ) {
+    onValue( getProjectRef( id ), project => {
+        setProject( project.val() )
+    })
+}
       
 
 
