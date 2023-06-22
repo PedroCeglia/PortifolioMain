@@ -1,6 +1,7 @@
 import EstruturaSection from "@/components/EstruturaSection";
 import { ProjetosContainerStyledComponent } from "./style";
 import ProjetosList from "./ProjetosList";
+import Link from "next/link";
 
 export default function ProjetosSection() {
     return(
@@ -11,6 +12,7 @@ export default function ProjetosSection() {
             <ProjetosContainerStyledComponent>
                 <h2>Projetos</h2>
                 <ProjetosList/>
+                <Link href={"/projetos"}>Ver mais</Link>
             </ProjetosContainerStyledComponent>
         </EstruturaSection>
     )
