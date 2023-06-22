@@ -13,7 +13,7 @@ export default function Header(){
         <>        
             <HeaderStyledComponent>
                 <HeaderContent menuIsOpen={menuIsOpen} handleMenuToggle={handleMenuToggle}/>
-                <HeaderMenuBox menuIsOpen={menuIsOpen}/>
+                <HeaderMenuBox menuIsOpen={menuIsOpen} handleMenuToggle={handleMenuToggle}/>
             </HeaderStyledComponent>
             <HeaderPaddingTop/>
         </>
