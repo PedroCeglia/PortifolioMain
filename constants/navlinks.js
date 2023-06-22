@@ -1,8 +1,7 @@
 export const navLinks = [
-    {link:"intro", title:"Intro"},
-    {link:"sobre-mim", title:"Sobre Mim"},
-    {link:"tech", title:"Tecnologias"},
-    {link:"projetos", title:"Projetos"},
-    {link:"certificados", title:"Certificados"},
+    {link:"intro-section", title:"Intro"},
+    {link:"about-me-section", title:"Sobre Mim"},
+    {link:"projetos-section", title:"Projetos"},
+    {link:"certificados-section", title:"Certificados"},
     {link:"contato", title:"Entre em Contato"}
 ]
