@@ -1,6 +1,6 @@
 import StyleGlobal from '@/styles/global'
 import EstruturaPagina from '@/components/EstruturaPagina'
-import StyledComponentsRegistry from './styledComponentRegistry'
+import StyledComponentsRegistry from '@/styles/styledComponentRegistry'
 
 
 export default function RootLayout({ children }) {
