@@ -20,10 +20,3 @@ export const ProjetosContainerStyledComponent = styled.div`
     }
 `
 
-export const ProjetosListStyledComponent = styled.div`
-    width: 95%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-`
