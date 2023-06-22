@@ -38,10 +38,6 @@ const filterListBySize = ( filterList, max6 ) => {
     filterList = ( max6 &&  filterList.length > 5) ? filterList.slice( 0, 6 ) : filterList
 }
 
-
-
-
-
 export function getCertificadoById( setCertificado, id ){
     onValue( getCertificadoRef( id ), certificado => {
         setCertificado( certificado )
