@@ -8,7 +8,7 @@ export default function ItemCertificado({certificado}){
             <span>{certificado.instituicao}</span>
             <span>{certificado.data}</span>
             <div>
-                <a href={certificado.link}>Abrir Certificado</a>
+                <a href={certificado.link} target="_blanc">Abrir Certificado</a>
                 <a href={certificado.descricao}>Descrição</a>
             </div>
         </ItemCertificadoStyledComponent>
