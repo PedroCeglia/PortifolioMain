@@ -1,6 +1,6 @@
-import EstruturaSection from "@/components/EstruturaSection";
+import EstruturaSection from "@/components/Estruturas/EstruturaSection";
+import EstruturaCarrossel from "@/components/Estruturas/EstruturaCarrosel";
 import { CertificadosContainerStyledComponent } from "./style";
-import CertificadosList from "./CertificadosList";
 import Link from "next/link";
 
 export default function CertificadosSection(){
@@ -10,8 +10,11 @@ export default function CertificadosSection(){
             idChangeSection={"intro-section"}
         >
             <CertificadosContainerStyledComponent>
-                <h2>Certificados</h2>
-                <CertificadosList/>
+                <EstruturaCarrossel
+                    title={"Certificados"}
+                    type={"Certificados"}
+                    max6
+                />
                 <Link href={"/certificados"}>Ver mais</Link>
             </CertificadosContainerStyledComponent>
         </EstruturaSection>
