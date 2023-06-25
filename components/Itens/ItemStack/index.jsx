@@ -1,28 +1,23 @@
 'use client'
 
 import Image from "next/image"
-import { useEffect, useState } from "react"
 import { Tilt } from "react-tilt"
 
 import { useSwiperSlide } from "swiper/react"
 
-export default function StacksItem({imageSrc, nameAlt}){
+export default function ItemStack( { item } ) {
 
     const swiperSlide = useSwiperSlide()
-
-
-    useEffect(()=>{
-
-    },[swiperSlide.isActive])
         
     if(swiperSlide.isActive){
-        return <ItemActive imageSrc={imageSrc} nameAlt={nameAlt}/> 
-    } else{
-        return <ItemDesactive imageSrc={imageSrc} nameAlt={nameAlt}/>
+        return <ItemActiveTilt imageSrc={item.imageSrc} nameAlt={item.nameAlt}/> 
+    } else {
+        return <ItemDesactiveTilt imageSrc={item.imageSrc} nameAlt={item.nameAlt}/>
     }    
 }
 
-function ItemActive({imageSrc, nameAlt}){
+function ItemActiveTilt( { imageSrc, nameAlt } ) {
+    
     const optionsTiltDefault = {
         reverse:        false,  // reverse the tilt direction
         max:            35,     // max tilt rotation (degrees)
@@ -44,9 +39,8 @@ function ItemActive({imageSrc, nameAlt}){
         cursor:"pointer",
 
         padding:"20px 10px",
-        
+        maxWidth:"250px"
     }
-
     return(
         <Tilt
             options={optionsTiltDefault}
@@ -56,20 +50,15 @@ function ItemActive({imageSrc, nameAlt}){
                 src={imageSrc}
                 alt={nameAlt}
                 title={nameAlt}
-                width={90}
-                height={90}
-                style={{
-                    width:"80%",
-                    height:"80%"
-                }}
+                width={180}
+                height={180}
             />                
         </Tilt>
     )
 }
-function ItemDesactive({imageSrc, nameAlt}){
+function ItemDesactiveTilt( { imageSrc, nameAlt } ) {
 
     const styleTilt = {
-        
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
@@ -77,10 +66,9 @@ function ItemDesactive({imageSrc, nameAlt}){
         backgroundColor:"rgba(0,0,0,.5)",
         cursor:"pointer",
 
-        padding:"20px 10px"
-
+        padding:"20px 10px",
+        maxWidth:"200px"
     }
-
     return(
         <div
             style={styleTilt}
@@ -89,12 +77,8 @@ function ItemDesactive({imageSrc, nameAlt}){
                 src={imageSrc}
                 alt={nameAlt}
                 title={nameAlt}
-                width={90}
-                height={90}
-                style={{
-                    width:"80%",
-                    height:"80%"
-                }}
+                width={180}
+                height={180}
             />                
         </div>
     )

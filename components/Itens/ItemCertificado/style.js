@@ -4,7 +4,8 @@ import styled from "styled-components"
 import style from "@/styles"
 
 export const ItemCertificadoStyledComponent = styled.div`
-    width: 30%;
+    width: 25vw;
+    min-width: 280px;
     margin: 20px 1%;
 
     border-radius: 20px;
