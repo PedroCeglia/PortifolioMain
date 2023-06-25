@@ -5,7 +5,7 @@ import style from "@/styles"
 
 export const ProjetosContainerStyledComponent = styled.div`
     width: 100%;
-    padding-top: 40px;
+    padding: 40px 0;
 
     display: flex;
     flex-direction: column;
