@@ -1,6 +1,6 @@
-import EstruturaSection from "@/components/EstruturaSection";
+import EstruturaSection from "@/components/Estruturas/EstruturaSection";
+import EstruturaLista from "@/components/Estruturas/EstruturaLista";
 import { ProjetosContainerStyledComponent } from "./style";
-import ProjetosList from "./ProjetosList";
 import Link from "next/link";
 
 export default function ProjetosSection() {
@@ -10,9 +10,12 @@ export default function ProjetosSection() {
             idChangeSection={"certificados-section"}
         >
             <ProjetosContainerStyledComponent>
-                <h2>Projetos</h2>
-                <ProjetosList/>
-                <Link href={"/projetos"}>Ver mais</Link>
+                <EstruturaLista
+                    title={"Projetos"}
+                    type={"Projetos"}
+                    max6
+                />
+                <Link href={"/projetos"} > Ver mais </Link>
             </ProjetosContainerStyledComponent>
         </EstruturaSection>
     )
