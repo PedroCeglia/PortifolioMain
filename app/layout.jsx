@@ -1,5 +1,5 @@
 import StyleGlobal from '@/styles/global'
-import EstruturaPagina from '@/components/EstruturaPagina'
+import EstruturaPagina from '@/components/Estruturas/EstruturaPagina'
 import StyledComponentsRegistry from '@/styles/styledComponentRegistry'
 
 
