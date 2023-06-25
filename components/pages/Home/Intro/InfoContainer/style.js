@@ -21,7 +21,6 @@ export const IntroInfoContainerStyledComponent = styled.div`
         font-size: ${style.fonts.fontsSize.littleSmall};
     }
 
-    padding-bottom: 40px;
 `
 export const IntroMainImage = styled.img`
     min-width: 150px;
