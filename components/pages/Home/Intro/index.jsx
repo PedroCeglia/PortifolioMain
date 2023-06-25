@@ -1,6 +1,6 @@
-import EstruturaSection from "@/components/EstruturaSection";
+import EstruturaSection from "@/components/Estruturas/EstruturaSection";
 import InfoContainer from "./InfoContainer";
-import CarroselStacks from "./CarroselStacks";
+import EstruturaCarrossel from "@/components/Estruturas/EstruturaCarrosel";
 
 import { 
     IntroSectionStyledComponent
@@ -16,7 +16,7 @@ export default function IntroSection(){
         >
             <IntroSectionStyledComponent>
                 <InfoContainer/>
-                <CarroselStacks/>
+                <EstruturaCarrossel title="Tecnologias que eu domino!" type={"Stacks"}/>
             </IntroSectionStyledComponent>
         </EstruturaSection>
     )
