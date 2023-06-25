@@ -1,4 +1,4 @@
-import EstruturaSection from "@/components/EstruturaSection";
+import EstruturaSection from "@/components/Estruturas/EstruturaSection";
 import { WhoImContainerStyledComponet } from "./style";
 
 import { whoImTexts } from "@/constants/whoImTexts";
