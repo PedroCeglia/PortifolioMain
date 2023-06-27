@@ -1,15 +1,17 @@
-import {ItemCertificadoStyledComponent} from "./style"
+import { ItemCertificadoStyledComponent } from "./style"
+import Link from "next/link"
+import EstruturaImagem from "@/components/Estruturas/EstruturaImagem"
 
-export default function ItemCertificado({ item }){
+export default function ItemCertificado( { item } ) {
     return(
         <ItemCertificadoStyledComponent>
-            <img src={item.image}/>
-            <h3>{item.name}</h3>
-            <span>{item.instituicao}</span>
-            <span>{item.data}</span>
+            <EstruturaImagem src={ item.image } alt={ item.name } title={ item.name } />
+            <h3> { item.name} </h3>
+            <span> { item.instituicao } </span>
+            <span> { item.data } </span>
             <div>
-                <a href={item.link} target="_blanc">Abrir Certificado</a>
-                <a href={item.descricao}>Descrição</a>
+                <a href={ item.link } target={ "_blanc" } > Abrir Certificado </a>
+                <Link href={ `/certificados/${ item.id }` }> Descrição </Link>
             </div>
         </ItemCertificadoStyledComponent>
     )
