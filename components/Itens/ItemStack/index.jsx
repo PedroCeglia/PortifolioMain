@@ -9,32 +9,32 @@ export default function ItemStack( { item } ) {
 
     const swiperSlide = useSwiperSlide()
         
-    if(swiperSlide.isActive){
-        return <ItemActiveTilt imageSrc={item.imageSrc} nameAlt={item.nameAlt}/> 
+    if( swiperSlide.isActive ){
+        return <ItemActiveTilt imageSrc={ item.imageSrc } nameAlt={ item.nameAlt }/> 
     } else {
-        return <ItemDesactiveTilt imageSrc={item.imageSrc} nameAlt={item.nameAlt}/>
+        return <ItemDesactiveTilt imageSrc={ item.imageSrc } nameAlt={ item.nameAlt }/>
     }    
 }
 
 function ItemActiveTilt( { imageSrc, nameAlt } ) {
     
     const optionsTiltDefault = {
-        reverse:        false,  // reverse the tilt direction
-        max:            35,     // max tilt rotation (degrees)
-        perspective:    1000,   // Transform perspective, the lower the more extreme the tilt gets.
-        scale:          1.1,    // 2 = 200%, 1.5 = 150%, etc..
-        speed:          1000,   // Speed of the enter/exit transition
-        transition:     true,   // Set a transition on enter/exit.
-        axis:           null,   // What axis should be disabled. Can be X or Y.
-        reset:          true,    // If the tilt effect has to be reset on exit.
-        easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+        reverse: false,  // reverse the tilt direction
+        max: 35,     // max tilt rotation (degrees)
+        perspective: 1000,   // Transform perspective, the lower the more extreme the tilt gets.
+        scale: 1.1,    // 2 = 200%, 1.5 = 150%, etc..
+        speed: 1000,   // Speed of the enter/exit transition
+        transition: true,   // Set a transition on enter/exit.
+        axis: null,   // What axis should be disabled. Can be X or Y.
+        reset: true,    // If the tilt effect has to be reset on exit.
+        easing: "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
     }
     const styleTilt = {
         display:"flex",
         justifyContent:"center",
         alignItems:"center",
 
-        backgroundColor:"rgba(0,0,0,.3)",
+        backgroundColor:"rgba( 0, 0, 0, .3 )",
         borderRadius:"10px",
         cursor:"pointer",
 
@@ -43,15 +43,15 @@ function ItemActiveTilt( { imageSrc, nameAlt } ) {
     }
     return(
         <Tilt
-            options={optionsTiltDefault}
-            style={styleTilt}
+            options={ optionsTiltDefault }
+            style={ styleTilt }
         >
             <Image
-                src={imageSrc}
-                alt={nameAlt}
-                title={nameAlt}
-                width={180}
-                height={180}
+                src={ imageSrc }
+                alt={ nameAlt }
+                title={ nameAlt }
+                width={ 180 }
+                height={ 180 }
             />                
         </Tilt>
     )
@@ -63,7 +63,7 @@ function ItemDesactiveTilt( { imageSrc, nameAlt } ) {
         justifyContent:"center",
         alignItems:"center",
 
-        backgroundColor:"rgba(0,0,0,.5)",
+        backgroundColor:"rgba( 0, 0, 0, .5 )",
         cursor:"pointer",
 
         padding:"20px 10px",
@@ -71,14 +71,14 @@ function ItemDesactiveTilt( { imageSrc, nameAlt } ) {
     }
     return(
         <div
-            style={styleTilt}
+            style={ styleTilt }
         >
             <Image
-                src={imageSrc}
-                alt={nameAlt}
-                title={nameAlt}
-                width={180}
-                height={180}
+                src={ imageSrc }
+                alt={ nameAlt }
+                title={ nameAlt }
+                width={ 180 }
+                height={ 180 }
             />                
         </div>
     )
