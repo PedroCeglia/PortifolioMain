@@ -1,4 +1,6 @@
 import {ItemProjetosStyledComponent} from "./style"
+import EstruturaImagem from "@/components/Estruturas/EstruturaImagem"
+import Link from "next/link"
 
 export default function ItemProjetos({ item }){
     
@@ -7,11 +9,11 @@ export default function ItemProjetos({ item }){
     return(
         <ItemProjetosStyledComponent>
             <h3>{item.name}</h3>
-            <img src={item.image} alt={item.name}/>
+            <EstruturaImagem src={item.image} alt={item.name}/>
             <div>
                 <a href={item.link} target="_blanc">Abrir</a>
                 <a href={`https://github.com/PedroCeglia/${item.repo}`} target="_blanc">Github <img src={githubIconSrc} alt="GitHub Icon"/></a>
-                <a href={item.descricao}>Descrição</a>
+                <Link href={`/projetos/${ item.id }#page-top`}>Descrição</Link>
             </div>
         </ItemProjetosStyledComponent>
     )
