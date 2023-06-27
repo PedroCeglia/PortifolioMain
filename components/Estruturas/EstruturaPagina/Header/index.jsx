@@ -1,17 +1,13 @@
-'use client'
-import { useState } from "react"
 import { HeaderStyledComponent, HeaderPaddingStlye } from "./style"
 import HeaderContent from "./HeaderContent"
 
 export default function Header(){
-    const [ menuIsOpen, setMenuIsOpen ] = useState( false )
-    function handleMenuToggle(){
-        setMenuIsOpen( !menuIsOpen )
-    }
+
     return(
         <>        
+            <div id="top-page" />
             <HeaderStyledComponent>
-                <HeaderContent menuIsOpen={ menuIsOpen } handleMenuToggle={ handleMenuToggle } />
+                <HeaderContent />
             </HeaderStyledComponent>
             <HeaderPaddingStlye/>
         </>
