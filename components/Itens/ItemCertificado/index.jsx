@@ -11,7 +11,7 @@ export default function ItemCertificado( { item } ) {
             <span> { item.data } </span>
             <div>
                 <a href={ item.link } target={ "_blanc" } > Abrir Certificado </a>
-                <Link href={ `/certificados/${ item.id }` }> Descrição </Link>
+                <Link href={ `/certificados/${ item.id }#page-top` }> Descrição </Link>
             </div>
         </ItemCertificadoStyledComponent>
     )
