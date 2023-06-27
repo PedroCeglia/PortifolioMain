@@ -40,7 +40,7 @@ const filterListBySize = ( filterList, max6 ) => {
 
 export function getCertificadoById( setCertificado, id ){
     onValue( getCertificadoRef( id ), certificado => {
-        setCertificado( certificado )
+        setCertificado( certificado.val() )
     })
 }
 export function getProjectById( setProject, id ) {
