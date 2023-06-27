@@ -1,5 +1,6 @@
 import { EstruturaLoadingStyledComponent } from "./style";
 import EstruturaSection from "../EstruturaSection";
+import EstruturaImagem from "../EstruturaImagem";
 
 export default function EstruturaLoading() {
     return (
@@ -7,7 +8,7 @@ export default function EstruturaLoading() {
             idSection={ "loading-section" }
         >
             <EstruturaLoadingStyledComponent>
-                <img src={ "/assets/gif/loading.gif" } alt={ "Loading GIF " } />
+                <EstruturaImagem src={ "/assets/gif/loading.gif" } alt={ "Loading GIF " } />
             </EstruturaLoadingStyledComponent>            
         </EstruturaSection>
 
