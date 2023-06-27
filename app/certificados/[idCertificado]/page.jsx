@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { getCertificadoById } from "@/firebase/Database"
 
 import { InfoIntroSection, InfoFinalSection } from "@/components/pages/Certificado"
+import EstruturaLoading from "@/components/Estruturas/EstruturaLoading"
 
 export default function CertificadoPage( { params } ) {
     
@@ -17,12 +18,13 @@ export default function CertificadoPage( { params } ) {
 
     return (
         <>
-            { certificado != null ? <>
-                <InfoIntroSection certificado={ certificado } />
-                <InfoFinalSection certificado={ certificado } />            
-            </> : <>
-                Loading
-            </> }
+            { 
+                certificado != null ? 
+                    <>
+                        <InfoIntroSection certificado={ certificado } />
+                        <InfoFinalSection certificado={ certificado } />            
+                    </> : <EstruturaLoading />
+             }
         </>
     )
 }
