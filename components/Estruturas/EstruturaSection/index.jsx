@@ -7,7 +7,9 @@ export default function EstruturaSection( { children, idSection, idChangeSection
     const verifyIsOdd = () => ( 
         idSection == "intro-section" ||
         idSection == "projetos-section" ||
-        idSection == "intro-certificado-section"
+        idSection == "intro-certificado-section" ||
+        idSection == "projeto-page-section-0" ||
+        idSection == "projeto-page-section-2" 
     )
     const isOdd = verifyIsOdd()
 
