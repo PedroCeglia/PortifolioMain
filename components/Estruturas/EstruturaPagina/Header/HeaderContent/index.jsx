@@ -1,45 +1,17 @@
-import { 
-    HeaderContentStyledComponent,
-    MenuToggle, MenuToggleLabel, MenuToggleLabelSpan,
-    LogoHeaderStyledComponent
-} from "./style"
+import { HeaderContentStyledComponent, LogoHeaderStyledComponent } from "./style"
+import HeaderMenuHasSize from "../HeaderMenuHasSize"
+import HeaderMenuToggle from "../HeaderMenuToggle"
 
-export default function HeaderContent({menuIsOpen, handleMenuToggle}){
+
+export default function HeaderContent() {
+
     return(
         <HeaderContentStyledComponent>
-            <LogoHeader/>
-            <HeaderMenuToggle 
-                menuIsOpen={menuIsOpen} 
-                handleMenuToggle={handleMenuToggle}
-            />
+            <LogoHeaderStyledComponent href={"/"}>
+                PedroCeglia | Portifolio
+            </LogoHeaderStyledComponent>
+            <HeaderMenuToggle />
+            <HeaderMenuHasSize />
         </HeaderContentStyledComponent>
-    )
-}
-
-function HeaderMenuToggle({menuIsOpen, handleMenuToggle}){
-    return(
-        <>        
-        <MenuToggle
-            type="checkbox"
-            id="menu-toggle-header"
-            checked={menuIsOpen}
-            onChange={handleMenuToggle}
-        />
-        <MenuToggleLabel
-            htmlFor="menu-toggle-header"
-        >
-            <MenuToggleLabelSpan menuIsOpen={menuIsOpen}
-            ></MenuToggleLabelSpan>
-        </MenuToggleLabel>
-        </>
-
-    )
-}
-
-function LogoHeader(){
-    return(
-        <LogoHeaderStyledComponent>
-            PedroCeglia | Portifolio
-        </LogoHeaderStyledComponent>
     )
 }
