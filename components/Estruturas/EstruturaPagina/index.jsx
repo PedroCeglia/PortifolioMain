@@ -1,9 +1,12 @@
 import { EstruturaPaginaStyledComponent, ContentEstruturaPaginaStyled } from "./style"
 import Header from "./Header"
 import Footer from "./Footer"
-export default function EstruturaPagina({children}){
-    return(
+import ScrollToTop from "./ScrollToTop"
+
+export default function EstruturaPagina( { children } ) {
+    return (
         <EstruturaPaginaStyledComponent>
+            <ScrollToTop/>
             <Header/>
             <ContentEstruturaPaginaStyled>
                 {children}
