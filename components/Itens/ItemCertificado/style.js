@@ -34,8 +34,22 @@ export const ItemCertificadoStyledComponent = styled.div`
         font-size: ${ style.fonts.fontsSize.littleBig };
     }
 
+    p {
+        width: 100%;
+        margin-bottom: 7px;
+        padding: 2px 15px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    p span {
+        margin: 0;
+        width: 100%;
+    }
+
     span {
-        margin: 0 15px 7px;
+        margin: 0 16px 7px;
     }
 
     div {
