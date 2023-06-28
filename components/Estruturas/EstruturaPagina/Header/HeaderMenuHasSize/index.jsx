@@ -12,7 +12,6 @@ export default function HeaderMenuHasSize() {
 
     const [ navLinks, setNavLinks ] = useState( navLinksSections )
     useEffect( () => {
-        console.log( pathname )
         if( pathname != "/" )
             setNavLinks( navLinksPage )
 
