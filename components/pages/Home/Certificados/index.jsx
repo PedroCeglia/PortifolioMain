@@ -15,7 +15,7 @@ export default function CertificadosSection(){
                     type={"Certificados"}
                     max6
                 />
-                <Link href={"/certificados#top-page"}>Ver mais</Link>
+                <Link href={"/certificados"} scroll={true}>Ver mais</Link>
             </CertificadosContainerStyledComponent>
         </EstruturaSection>
     )
