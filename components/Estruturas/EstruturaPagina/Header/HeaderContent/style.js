@@ -5,7 +5,6 @@ import style from "@/styles"
 
 import Link from "next/link"
 
-
 export const HeaderContentStyledComponent = styled.div`
 
     width: 100vw;
@@ -20,7 +19,6 @@ export const HeaderContentStyledComponent = styled.div`
     justify-content: space-between;
     align-items: center;
 `
-
 export const LogoHeaderStyledComponent = styled(Link)`
     
     font-size: ${style.fonts.fontsSize.big};
@@ -28,6 +26,11 @@ export const LogoHeaderStyledComponent = styled(Link)`
     font-weight: 100;
     color: ${style.theme.color.c1};
     text-decoration: none;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
 
 
