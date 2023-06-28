@@ -45,6 +45,8 @@ export const IntroInfoContentStyledComponent = styled.div`
 
     font-family: ${style.fonts.fontsFamily.poppins};
     color: ${style.theme.color.c1};
+    
+    margin-bottom: 20px;
 
     
     h1{
