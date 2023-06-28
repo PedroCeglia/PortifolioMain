@@ -16,7 +16,7 @@ export default function IntroSection(){
         >
             <IntroSectionStyledComponent>
                 <InfoContainer/>
-                <EstruturaCarrossel title="Tecnologias que eu domino!" type={"Stacks"}/>
+                <EstruturaCarrossel type={"Stacks"} />
             </IntroSectionStyledComponent>
         </EstruturaSection>
     )
