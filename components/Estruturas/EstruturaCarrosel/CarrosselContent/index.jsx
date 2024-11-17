@@ -5,7 +5,6 @@ import { SwiperCarrosselContent } from "./swiper";
 import { SwiperSlideCarrosselContent } from "./style";
 
 // Itens
-import StacksItem from "@/components/Itens/ItemStack";
 import ItemCertificado from "@/components/Itens/ItemCertificado";
 import ItemProjetos from "@/components/Itens/ItemProjetos";
 

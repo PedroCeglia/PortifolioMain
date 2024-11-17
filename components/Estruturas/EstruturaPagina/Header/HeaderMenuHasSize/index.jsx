@@ -1,4 +1,5 @@
 'use client'
+
 import { useState, useEffect } from "react"
 import { HeaderMenuHasSizeStyledComponent } from "./style"
 import { navLinksSections, navLinksPage } from "@/constants/navlinks"
